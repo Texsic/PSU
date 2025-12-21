@@ -1,0 +1,473 @@
+
+*** Running vivado
+    with args -log Datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Dec 18 17:23:48 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Datapath.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 497.977 ; gain = 213.082
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/utils_1/imports/synth_1/TestBench.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/utils_1/imports/synth_1/TestBench.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Datapath -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12144
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1204.645 ; gain = 493.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/Datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ProgramCounter.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ProgramCounter.v:5]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IF_ProgramCounterMux' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/IF_ProgramCounterMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ProgramCounterMux' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/IF_ProgramCounterMux.v:5]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IFIDpipelineReg' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/IFIDpipelineReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IFIDpipelineReg' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/IFIDpipelineReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_addrLS' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_addrLS.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ID_addrLS' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_addrLS.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ID_immLS' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_immLS.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ID_immLS' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_immLS.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_BranchProgramCounter' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_BranchProgramCounter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ID_BranchProgramCounter' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_BranchProgramCounter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/RegisterFile.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/RegisterFile.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Fwd_FwdMuxA' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/imports/CMPEN331_FinalProjectNoEC.srcs/sources_1/new/Fwd_FwdMuxA.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Fwd_FwdMuxA' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/imports/CMPEN331_FinalProjectNoEC.srcs/sources_1/new/Fwd_FwdMuxA.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Fwd_FwdMuxB' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/imports/CMPEN331_FinalProjectNoEC.srcs/sources_1/new/Fwd_FwdMuxB.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Fwd_FwdMuxB' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/imports/CMPEN331_FinalProjectNoEC.srcs/sources_1/new/Fwd_FwdMuxB.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateExtender' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ImmediateExtender.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateExtender' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ImmediateExtender.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RegrtMultiplexer' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/RegrtMultiplexer.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RegrtMultiplexer' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/RegrtMultiplexer.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ID_rsrtequCheck' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_rsrtequCheck.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ID_rsrtequCheck' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_rsrtequCheck.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ID_JumpPCconcatination' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_JumpPCconcatination.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ID_JumpPCconcatination' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/ID_JumpPCconcatination.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ControlUnit.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ControlUnit.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IDEXEpipeline' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/IDEXEpipeline.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'IDEXEpipeline' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/IDEXEpipeline.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EXE_ProgramCounter' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_ProgramCounter.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_ProgramCounter' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_ProgramCounter.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EXE_ALUMux2' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_ALUMux2.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_ALUMux2' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_ALUMux2.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALUMux' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ALUMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ALUMux' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ALUMux.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ALU.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ALU.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EXE_ALUoutMux' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_ALUoutMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_ALUoutMux' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_ALUoutMux.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EXE_f' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_f.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_f' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/imports/sources_1/new/EXE_f.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EXEMEMpipeline' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/EXEMEMpipeline.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXEMEMpipeline' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/EXEMEMpipeline.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/DataMemory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/DataMemory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'MEMWBpipeline' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/MEMWBpipeline.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWBpipeline' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/MEMWBpipeline.v:5]
+INFO: [Synth 8-6157] synthesizing module 'WbMux' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/WBMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'WbMux' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/WBMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (0#1) [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/Datapath.v:3]
+WARNING: [Synth 8-3848] Net rom[35] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[36] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[37] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[38] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[39] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[40] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[41] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[42] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[43] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[44] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[45] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[46] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[47] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[48] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[49] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[50] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[51] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[52] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[53] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[54] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[55] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[56] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[57] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[58] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[59] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[60] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[61] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[62] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-3848] Net rom[63] in module/entity InstructionMemory does not have driver. [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/InstructionMemory.v:8]
+WARNING: [Synth 8-7129] Port malu[31] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[30] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[29] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[28] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[27] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[26] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[25] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[24] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[23] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[22] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[21] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[20] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[19] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[18] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[17] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[16] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[15] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[14] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[13] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[12] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[11] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[10] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[9] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[8] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[7] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[1] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port malu[0] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[25] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[24] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[23] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[22] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[21] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[20] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[19] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[18] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[17] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[16] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[15] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[14] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[13] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[12] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[11] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[10] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[9] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[8] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[7] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[6] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[5] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[4] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[3] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[2] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[1] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[0] in module ID_JumpPCconcatination is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clrn in module RegisterFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[18] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[17] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[16] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[15] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[14] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[13] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[12] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[11] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[10] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[9] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[8] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[1] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[0] in module InstructionMemory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1315.422 ; gain = 603.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1315.422 ; gain = 603.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1315.422 ; gain = 603.895
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1315.422 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Datapath_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Datapath_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1371.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1371.484 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1371.484 ; gain = 659.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1371.484 ; gain = 659.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1371.484 ; gain = 659.957
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'dimm32_reg' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ImmediateExtender.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.srcs/sources_1/new/ALU.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1371.484 ; gain = 659.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 4     
+	  10 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 6     
+	  11 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port pc[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[18] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[17] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[16] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[15] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[14] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[13] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[12] in module InstructionMemory is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (ID_IE/dimm32_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (ID_RegFile/qb0) is unused and will be removed from module Datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1446.430 ; gain = 734.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|Datapath    | ID_RegFile/register_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Datapath    | MEM_DataMemory/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1528.941 ; gain = 817.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1619.230 ; gain = 907.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|Datapath    | ID_RegFile/register_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Datapath    | MEM_DataMemory/ram_reg  | Implied   | 32 x 32              | RAM32X1S x 32  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1629.312 ; gain = 917.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    43|
+|3     |LUT1     |     3|
+|4     |LUT2     |   103|
+|5     |LUT3     |   121|
+|6     |LUT4     |    14|
+|7     |LUT5     |   117|
+|8     |LUT6     |   545|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |RAM32X1S |    32|
+|12    |FDRE     |   360|
+|13    |FDSE     |     5|
+|14    |LD       |    47|
+|15    |IBUF     |     1|
+|16    |OBUF     |    32|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1801.324 ; gain = 1033.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1801.324 ; gain = 1089.797
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1810.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 136 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 93 instances were transformed.
+  LD => LDCE: 47 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+Synth Design complete | Checksum: bfeb9fec
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 1814.133 ; gain = 1311.684
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1814.133 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 18 17:24:43 2025...

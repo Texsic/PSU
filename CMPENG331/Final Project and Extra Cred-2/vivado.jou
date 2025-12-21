@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Dec 18 16:01:20 2025
+# Process ID         : 12876
+# Current directory  : C:/Users/mma7020/Desktop/Final Project and Extra Cred
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent6252 C:\Users\mma7020\Desktop\Final Project and Extra Cred\Final Project and Extra Cred.xpr
+# Log file           : C:/Users/mma7020/Desktop/Final Project and Extra Cred/vivado.log
+# Journal file       : C:/Users/mma7020/Desktop/Final Project and Extra Cred\vivado.jou
+# Running On         : E5-CSE-136-28
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 31025 MB
+#-----------------------------------------------------------
+sstart_guioopen_project {C:/Users/mma7020/Desktop/Final Project and Extra Cred/Final Project and Extra Cred.xpr}uupdate_compile_order -fileset sources_1
+launch_simulation
+source TestBench.tcl
+run 10 us
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+source TestBench.tcl
+run 10 us
+current_wave_config {Untitled 2}
+add_wave {{/TestBench/uut/pc}} 
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {Untitled 2}
+add_wave {{/TestBench/uut/wbData}} 
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+source TestBench.tcl
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 60 ns
+current_wave_config {Untitled 3}
+add_wave {{/TestBench/uut}} 
+run 60 ns
+run 10 us
+run 10 us
+run all
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+open_hw_manager
+relaunch_sim
+close_sim
+launch_simulation
+source TestBench.tcl
+run 10 us
+current_wave_config {Untitled 5}
+add_wave {{/TestBench/uut}} 
+run 10 us
+close_sim
+launch_simulation
+source TestBench.tcl
+close_sim
+launch_simulation
+launch_simulation
+source TestBench.tcl
+current_wave_config {Untitled 7}
+add_wave {{/TestBench/uut}} 
+current_wave_config {Untitled 7}
+add_wave {{/TestBench/uut}} 
+run 10 us
+run 10 us
+run 10 us
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+source TestBench.tcl
+run 10 us
+current_wave_config {Untitled 8}
+add_wave {{/TestBench/uut}} 
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+close_sim

@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/mma7020/Desktop/Lab5/Lab5.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sim_1/new/testbench.v,1765151209,verilog,,,,testbench,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v,1765150913,verilog,,C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sim_1/new/testbench.v,,ALU;ALU_Mux;ControlUnit;DataMemory;EXMEM_Register;IDEXE_Register;IFID_Register;InstructionMemory;MEMWB_Register;PC;PC_Adder;RegDstMux;RegisterFile;SignExtension;cpu_pipeline,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

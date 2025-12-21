@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mma7020/Desktop/lab3v2/lab3v2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXE_Register
+INFO: [VRFC 10-311] analyzing module IFID_Register
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module cpu_if_id
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mma7020/Desktop/Lab3/Lab3.srcs/sim_1/new/lab3_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+ERROR: [VRFC 10-4982] syntax error near '"  --- IF Stage ---\n' [C:/Users/mma7020/Desktop/Lab3/Lab3.srcs/sim_1/new/lab3_testbench.v:85]
+ERROR: [VRFC 10-8530] module 'testbench' is ignored due to previous errors [C:/Users/mma7020/Desktop/Lab3/Lab3.srcs/sim_1/new/lab3_testbench.v:17]

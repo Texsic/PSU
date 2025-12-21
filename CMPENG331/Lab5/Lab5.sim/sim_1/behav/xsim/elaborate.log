@@ -1,0 +1,59 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 12. Module cpu_pipeline doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 177. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 184. Module PC_Adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 188. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 208. Module IFID_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 215. Module ControlUnit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 236. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 267. Module SignExtension doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 271. Module RegDstMux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 275. Module IDEXE_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 298. Module ALU_Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 302. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 311. Module EXMEM_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 330. Module DataMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 345. Module MEMWB_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 12. Module cpu_pipeline doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 177. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 184. Module PC_Adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 188. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 208. Module IFID_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 215. Module ControlUnit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 236. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 267. Module SignExtension doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 271. Module RegDstMux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 275. Module IDEXE_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 298. Module ALU_Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 302. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 311. Module EXMEM_Register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 330. Module DataMemory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mma7020/Desktop/Lab5/Lab5.srcs/sources_1/new/cpu_pipeline.v" Line 345. Module MEMWB_Register doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_Adder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IFID_Register
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.RegDstMux
+Compiling module xil_defaultlib.IDEXE_Register
+Compiling module xil_defaultlib.ALU_Mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EXMEM_Register
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB_Register
+Compiling module xil_defaultlib.cpu_pipeline
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

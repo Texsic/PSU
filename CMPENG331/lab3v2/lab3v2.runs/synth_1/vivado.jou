@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Nov  9 20:56:51 2025
+# Process ID         : 19004
+# Current directory  : C:/Users/mma7020/Desktop/lab3v2/lab3v2.runs/synth_1
+# Command line       : vivado.exe -log cpu_if_id.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_if_id.tcl
+# Log file           : C:/Users/mma7020/Desktop/lab3v2/lab3v2.runs/synth_1/cpu_if_id.vds
+# Journal file       : C:/Users/mma7020/Desktop/lab3v2/lab3v2.runs/synth_1\vivado.jou
+# Running On         : E5-CSE-136-26
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 25231 MB
+#-----------------------------------------------------------
+source cpu_if_id.tcl -notrace
